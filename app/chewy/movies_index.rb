@@ -1,5 +1,7 @@
 class MoviesIndex < Chewy::Index
   define_type Movie do
-    field :title, :director, :description # multiple fields without additional options
+    field :title
+    field :director
+    field :description
   end
 end
