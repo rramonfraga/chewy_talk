@@ -1,3 +1,5 @@
+# config/chewy.yml
+# separate environment configs
 test:
   host: 'localhost:9250'
   prefix: 'test'
