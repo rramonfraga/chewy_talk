@@ -8,8 +8,9 @@
       <a class="nav-link" href="/movies/new">New Movies</a>
     </li>
   </ul>
-  <form class="form-inline float-xs-right">
-    <input class="form-control" type="text" placeholder="Search">
-    <button class="btn btn-outline-success" type="submit">Search</button>
-  </form>
+  <%= form_tag searches_path, method: 'get', class: "form-inline float-xs-right" do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search" %>
+    <%= submit_tag "Search", name: nil, class: "btn btn-outline-success" %>
+  <% end %>
+
 </nav>

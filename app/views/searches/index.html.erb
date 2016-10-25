@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Search</h1>
+
+<div class="row">
+  <% @search.each do |search| %>
+    <div class="col-sm-12">
+      <div class="thumbnail">
+        <%= link_to search.titlerata, search  %>
+      </div>
+    </div>
+    <br>
+    <br>
+  <% end %>
+</div>
